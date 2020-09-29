@@ -95,13 +95,84 @@
 // }else {
 //     console.log("NO !")
 // } // Một số trường hợp vẫn sai
+/* CHỮA BÀI */
+// var n = 7513
+// var check = true
+// while (n > 0) {
+//     var remain = n % 10
+//     if (remain % 2 == 0) {
+//         check = false;
+//         break;
+//     }
+//     n = Math.floor(n / 10)
+//     console.log("n: ", n, "remain: " + remain)
+// }
+// if(check) {
+//     alert("N is combine of odd numbers")
+// } else {
+//     alert("N is not OKE !")
+// }
 
 /* 9. VIẾT CHƯƠNG TRÌNH IN BẢNG CỬU CHƯƠNG RA MÀN HÌNH*/
 // for(var i = 2; i <= 9; i++) {
 //     for(var j = 1; j <= 10; j++) {
-//         document.write(i + "x" + j + "=" + (i * j));
+//         document.write(i + " x " + j + " = " + (i * j));
 //         document.write("</br>")
-//         document.write("\n");
 //     }
 //     document.write("</br>")
 // }
+
+
+// BÀI TẬP BUỔI 8 (PHẦN 2)
+/* 11. ĐẾM CÓ BAO NHIÊU KHOẢNG TRẮNG TRONG MỘT CHUỖI */
+// function demKhoangTrang(str) {
+//     var output = " Hello  world";
+//     return str.split(" ").length;
+// }
+// document.write(demKhoangTrang(output));
+
+/* 12. HÃY REMOVE TẤT CẢ CÁC KHOẢNG TRẮNG, SPACE VÀ ENTER TRONG MỘT CHUỖI */
+// function xoaKhoangTrang() {
+//     var output = "	Hello world   ";
+//     output = output.replace(/ +/g, "");
+//     document.write(output.trim());
+// }
+// xoaKhoangTrang();
+
+/* 13. HÃY VIẾT CHƯƠNG TRÌNH ĐẢO NGƯỢC SAU S */
+// function daonguocsau(str) {
+//     return str.split("").reverse().join("");
+// }
+// document.write(daonguocsau("This is a beautiful day"));
+
+/* 14. NHẬP VÀO CHUỖI S1 VÀ S2, CHO BIẾT VỊ TRÍ CỦA CHUỖI S2 TRONG S1 */
+// function demvitri() {
+//     var s1 = "This is a beautiful day";
+//     var s2 = "is";
+//     document.write(s1.indexOf(s2));
+// }
+// demvitri();
+
+/* 15. VIẾT CHƯƠNG TRÌNH CHUẨN HÓA HỌ TÊN */
+// function chuanHoaHoTen() {
+//     var str="NguyeN THI tho tHu hA"
+//     var chuanHoa=str.toLowerCase().split(' ').map(x=>x[0].toUpperCase()+x.slice(1)).join(' ');
+//     document.write(chuanHoa);
+// }
+// chuanHoaHoTen();
+
+/* 16. VIẾT CHƯƠNG TRÌNH LẤY ID NAME CỦA FACEBOOK*/
+// function layID() {
+//     var urlFB = "https://www.facebook.com/ngothucdat"
+//     document.write(urlFB.slice(25));
+// }
+// layID();
+
+/* 17. VIẾT HÀM SỐ TÍNH MIN, MAX CỦA 3 SỐ*/
+// function maxOfArray(array) {
+//     return Math.max.apply(Math, array);
+//   }
+
+// let array = [2,4,7];
+// document.write(maxOfArray(array));
+
